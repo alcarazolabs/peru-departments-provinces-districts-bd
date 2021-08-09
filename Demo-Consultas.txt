@@ -1,0 +1,14 @@
+ # Obtener pronvicias de Lambayeque:
+
+  SELECT pro.name FROM departments, provinces as pro WHERE departments.id=pro.department_id AND departments.id=14
+
+ # Obtener distritos de la pronvicia de Lambayeque:
+
+  SELECT distri.name FROM provinces as pro, districts as distri 
+  WHERE distri.province_id=pro.id and distri.province_id=1403
+
+ # Obtener distritos de la pronvicia de Ferreñafe:
+
+  SELECT distri.name FROM provinces as pro, districts as distri 
+  WHERE distri.province_id=pro.id and distri.province_id=1402
+
